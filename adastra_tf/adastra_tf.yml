@@ -1,0 +1,91 @@
+title: Adastra TF
+requires:
+- wgadastra_tf
+version: 0.0.1
+type: annotator
+level: variant
+output_columns:
+- name: top_5_tf
+  title: Top 5 TFs
+  type: string
+  width: 70
+
+- name: n_tf_snps
+  title: Number of TF
+  type: int
+
+- name: top_3_cl
+  title: Top 3 cell types
+  type: string
+  width: 70
+
+- name: n_cl_snps
+  title: Number of cell types
+  type: int
+
+- name: all_tf
+  title: All TF SNPs
+  type: string
+  hidden: true
+  table: true
+  table_headers:
+  - name: name
+    title: Uniprot ID
+    type: string
+  - name: es_ref
+    title: Effect size Ref
+    type: float
+  - name: es_alt
+    title: Effect size Alt
+    type: float
+  - name: mean_bad
+    title: Mean BAD
+    type: float
+  - name: fdr_ref
+    title: FDR Ref
+    type: float
+  - name: fdr_alt
+    title: FDR Alt
+    type: float
+  - name: motif_concordance
+    title: Motif concordance
+    type: string
+
+- name: all_cl
+  title: All cell types SNPs
+  type: string
+  hidden: true
+  table: true
+  table_headers:
+  - name: name
+    title: Cell type
+    type: string
+  - name: es_ref
+    title: Effect size Ref
+    type: float
+  - name: es_alt
+    title: Effect size Alt
+    type: float
+  - name: mean_bad
+    title: Mean BAD
+    type: float
+  - name: fdr_ref
+    title: FDR Ref
+    type: float
+  - name: fdr_alt
+    title: FDR Alt
+    type: float
+
+
+# description is a short description of what the annotator does. Try to limit it
+# to around 80 characters.
+description: Template annotator. If you see this description in production, someone is wrong.
+
+# developer is you!
+developer:
+  name: ''
+  organization: ''
+  email: ''
+  website: ''
+  citation: ''
+
