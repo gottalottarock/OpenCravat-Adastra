@@ -15,7 +15,7 @@ class CravatAnnotator(BaseAnnotator):
         sqlite3.Connection object is stored as self.dbconn, and the
         sqlite3.Cursor object is stored as self.cursor.
         """
-        self.conn = sqlite3.connect("../db/adastra.sqlite")
+        self.conn = sqlite3.connect("./data/adastra.sqlite")
         self.conn.row_factory = sqlite3.Row
         self.curs = self.conn.cursor()
         self.all_keys_tf = [
