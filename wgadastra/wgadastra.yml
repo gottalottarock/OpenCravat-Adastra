@@ -1,0 +1,15 @@
+title: Adastra TF
+version: 1.1.1
+type: webviewerwidget
+required_annotator: adastra
+description: Adastra TF webviewer widget
+hidden: true
+requires_opencravat: '>=2.2.1'
+developer:
+  name: ''
+  organization: ''
+  email: ''
+  website: ''
+  citation: ''
+tags:
+- visualization
