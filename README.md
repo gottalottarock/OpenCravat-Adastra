@@ -1,5 +1,14 @@
 # Integration of the ADASTRA database as a novel annotator module in the OpenCRAVAT pipeline
 
+Students:
+
+* Kuznetsov Stepan
+* Fofanov Mikhail
+* Suponin Andrey
+
+Supervisor:
+* Kasyanov Artem, IITP RAS
+
 ## Motivation
 
 Currently, there are a large number of ways to annotate genetic variants and various databases containing results of variant calling from different experiments. Here, we used the OpenCRAVAT pipeline able to annotate SNPs and other genetic variants using more than 150 databases and added a novel module to it that contains ADASTRA database. The ADASTRA database contains information about allele-specific transcription factor binding events. A Transcription Factor (TF) might prefer to bind one of two alternative alleles of homologous chromosomes and thus exhibit allele-specific binding (ASB). ASB highlights regulatory SNPs with high potential to affect gene expression.
