@@ -1,0 +1,55 @@
+#CRAVAT Report
+#Created at Sunday 05/22/2022 03:41:59
+#Report level: variant
+#
+Variant Annotation																Adastra						Extra VCF INFO Annotations			Original Input				VCF Info							
+UID	Chrom	Position	Ref Base	Alt Base	Note	Coding	Gene	Transcript	Sequence Ontology	cDNA change	Protein Change	All Mappings	Sample Count	Samples	Tags	Top 5 TFs	Number of TF	Top 3 cell types	Number of cell types	All TF SNPs	All cell types SNPs	VCF Position	VCF Ref Allele	VCF Alt Allele	Chrom	Pos	Reference allele	Alternate allele	Phred	VCF filter	Zygosity	Alternate reads	Total reads	Variant AF	Haplotype block ID	Haplotype strand ID
+1	chr1	67214307	G	A			IL23R	ENST00000347310.10	intron_variant	c.799-5267G>A		ENST00000347310.10:IL23R:Q5VWK5:intron_variant::c.799-5267G>A; ENST00000371007.6:C1orf141:Q5JVX7:intron_variant::c.-104+17539C>T; ENST00000425614.3:IL23R:Q5VWK5:intron_variant::c.34-5267G>A; ENST00000473881.2:IL23R::intron_variant,NMD_transcript_variant::c.34-5267G>A; ENST00000637002.1:IL23R::intron_variant::c.190-5267G>A	0		rs2019262	CTCF_HUMAN	1			[["CTCF_HUMAN", 0.54, 0.42, 1.15, 0.01, 1.0, "No Hit"]]		67214307	G	A	chr1	67214307	G	A								
+2	chr10	6052734	C	T			IL2RA	ENST00000379959.8	intron_variant	c.64+9354G>A		ENST00000256876.10:IL2RA::intron_variant::c.64+9354G>A; ENST00000379954.5:IL2RA::intron_variant::c.64+9354G>A; ENST00000379959.8:IL2RA:P01589:intron_variant::c.64+9354G>A; ENST00000644262.1:IL2RA::intron_variant,processed_transcript::	0		rs61839660	BRD4_HUMAN	1	primary B-CLL cells	1	[["BRD4_HUMAN", 2.57, null, 2.0, 0.0, 1.0, null]]	[["primary B-CLL cells", 2.57, null, 2.0, 0.0, 1.0]]	6052734	C	T	chr10	6052734	C	T								
+3	chr11	118883644	C	A			CXCR5	ENST00000292174.5	2kb_upstream_variant	c.-298C>A		ENST00000292174.5:CXCR5:P32302:2kb_upstream_variant::c.-298C>A	0		rs630923	BRD4_HUMAN	1	primary B-CLL cells	1	[["BRD4_HUMAN", 1.85, null, 4.0, 0.02, 1.0, null]]	[["primary B-CLL cells", 1.85, null, 4.0, 0.01, 1.0]]	118883644	C	A	chr11	118883644	C	A								
+4	chr20	63697746	G	A			TNFRSF6B	ENST00000369996.3	intron_variant	c.619+224G>A		ENST00000318100.9:RTEL1:Q9NZ71:2kb_downstream_variant::c.*1961G>A; ENST00000360203.10:RTEL1:Q9NZ71:2kb_downstream_variant::c.*1888G>A; ENST00000369996.3:TNFRSF6B:O95407:intron_variant::c.619+224G>A; ENST00000370018.7:RTEL1:Q9NZ71:2kb_downstream_variant::c.*1961G>A; ENST00000492259.6:RTEL1-TNFRSF6B::intron_variant,NMD_transcript_variant::c.*1958+224G>A; ENST00000508582.6:RTEL1:Q9NZ71:2kb_downstream_variant::c.*1961G>A; ENST00000609188.1:ARFRP1::2kb_downstream_variant,processed_transcript::; ENST00000610414.4:ARFRP1::2kb_downstream_variant,processed_transcript::; ENST00000612157.4:ARFRP1:Q13795:2kb_downstream_variant::c.*2852C>T; ENST00000612256.4:ARFRP1:Q13795:2kb_downstream_variant::c.*2697C>T; ENST00000612772.1:ARFRP1::2kb_downstream_variant,processed_transcript::; ENST00000614942.4:ARFRP1:Q13795:2kb_downstream_variant::c.*2937C>T; ENST00000618568.4:ARFRP1:Q13795:2kb_downstream_variant,NMD_transcript_variant::c.*2866C>T; ENST00000618838.4:ARFRP1:Q13795:2kb_downstream_variant::c.*2697C>T; ENST00000619493.4:ARFRP1:Q13795:2kb_downstream_variant::c.*2697C>T; ENST00000622789.5:ARFRP1:Q13795:2kb_downstream_variant::c.*2697C>T	0		rs6062496	GCR_HUMAN	1	BEAS-2B (bronchial epithelium)	1	[["GCR_HUMAN", 0.11, 0.93, 2.0, 1.0, 0.01, "No Hit"]]	[["BEAS-2B (bronchial epithelium)", 0.11, 0.93, 2.0, 1.0, 0.01]]	63697746	G	A	chr20	63697746	G	A								
+5	chr22	39264824	T	C			AL031590.1	ENST00000641859.1	lnc_RNA			ENST00000641859.1:AL031590.1::intron_variant,lnc_RNA::; ENST00000642075.1:AL031590.1::2kb_upstream_variant,lnc_RNA::	0		rs2143178	STAT1_HUMAN	1	CD14+ monocytes	1	[["STAT1_HUMAN", 1.97, 0.29, 3.0, 0.01, 1.0, "No Hit"]]	[["CD14+ monocytes", 1.97, 0.29, 3.0, 0.01, 1.0]]	39264824	T	C	chr22	39264824	T	C								
+6	chr5	132435113	C	T			AC116366.3	ENST00000638452.2	intron_variant	c.-208-14537C>T		ENST00000337752.6:IRF1-AS1::intron_variant,lnc_RNA::; ENST00000378947.7:IRF1-AS1::intron_variant,lnc_RNA::; ENST00000378953.8:IRF1-AS1::intron_variant,lnc_RNA::; ENST00000407797.6:IRF1-AS1::intron_variant,lnc_RNA::; ENST00000612967.2:IRF1-AS1::intron_variant,lnc_RNA::; ENST00000621237.1:IRF1-AS1::intron_variant,lnc_RNA::; ENST00000638452.2:AC116366.3::intron_variant::c.-208-14537C>T; ENST00000638504.1:AC116366.3::intron_variant,processed_transcript::; ENST00000638568.2:AC116366.3::intron_variant::c.-350-14537C>T	0		rs2188962	P63_HUMAN	1			[["P63_HUMAN", -1.17, 1.47, 1.0, 1.0, 0.03, "No Hit"]]		132435113	C	T	chr5	132435113	C	T								
+7	chr9	4984530	G	C			JAK2	ENST00000381652.3	2kb_upstream_variant	c.-1209G>C		ENST00000381652.3:JAK2:O60674:2kb_upstream_variant::c.-1209G>C	0		rs1887428	FOXK2_HUMAN;STAT1_HUMAN	2	GM12878 (female B-cells lymphoblastoid cell line);HepG2 (hepatoblastoma);CD14+ monocytes	4	[["FOXK2_HUMAN", 0.24, 2.05, 1.0, 0.59, 0.0, null], ["STAT1_HUMAN", -0.76, 1.33, 2.0, 1.0, 0.01, "No Hit"]]	[["GM12878 (female B-cells lymphoblastoid cell line)", null, 2.12, 1.0, 1.0, 0.0], ["HepG2 (hepatoblastoma)", 0.69, 0.48, 1.0, 0.0, 0.93], ["CD14+ monocytes", -0.76, 1.33, 2.0, 1.0, 0.01], ["WA09 (embryonic stem cells)", 1.25, 0.04, 1.0, 0.04, 1.0]]	4984530	G	C	chr9	4984530	G	C								
+8	chr9	4984530	G	T			JAK2	ENST00000381652.3	2kb_upstream_variant	c.-1209G>T		ENST00000381652.3:JAK2:O60674:2kb_upstream_variant::c.-1209G>T	0		rs1887428							4984530	G	T	chr9	4984530	G	T								
+#CRAVAT Report
+#Created at Sunday 05/22/2022 03:41:59
+#Report level: gene
+#
+Variant Annotation					
+Gene	Note	Number of Coding Variants	Number of Noncoding Variants	Sequence Ontology	All Sequence Ontologies
+IL23R		0	1	intron_variant	intron_variant(0),NMD_transcript_variant(0)
+IL2RA		0	1	intron_variant	intron_variant(0),processed_transcript(0)
+CXCR5		0	1	2kb_upstream_variant	
+TNFRSF6B		0	1	intron_variant	intron_variant(0)
+AL031590.1		0	1	lnc_RNA	intron_variant(0),lnc_RNA(0)
+AC116366.3		0	1	intron_variant	intron_variant(0),processed_transcript(0)
+JAK2		0	2	2kb_upstream_variant	
+#CRAVAT Report
+#Created at Sunday 05/22/2022 03:41:59
+#Report level: sample
+#
+Variant Annotation									
+UID	Sample	Phred	VCF filter	Zygosity	Alternate reads	Total reads	Variant allele frequency	Haplotype block ID	Haplotype strand ID
+1									
+2									
+3									
+4									
+5									
+6									
+7									
+8									
+#CRAVAT Report
+#Created at Sunday 05/22/2022 03:41:59
+#Report level: mapping
+#
+Variant Annotation			
+Original Line	User Tags	UID	Input File Number
+3	rs2019262	1	0
+4	rs61839660	2	0
+5	rs630923	3	0
+6	rs6062496	4	0
+7	rs2143178	5	0
+8	rs2188962	6	0
+9	rs1887428	7	0
+9	rs1887428	8	0
