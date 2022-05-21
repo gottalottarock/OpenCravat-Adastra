@@ -21,30 +21,30 @@ ADASTRA database | ADASTRA v4.0
 
 You can install the versions of the python libraries that were used during the testing of the pipeline using the requirements.txt:
 
-` ` `
+```
 pip install -r requirements.txt
-` ` `
+```
 
 ## Installation
 
 Cloning the OpenCravat-Adastra github repository and install requirements.
 
-` ` `
+```
 git clone https://github.com/gottalottarock/OpenCravat-Adastra.git
 cd OpenCravat-Adastra
 pip install -r requirements.txt
-` ` `  
+```
 
 To download the Adastra database, you need to contact one of the developers of this repository.  
 Move adastra.sqlite to adastra/data
 Next, you need to transfer the module and widget to the open-cravat repo.  
 
 
-` ` `
+```
 OC_MODULES_PATH=$(oc config md)  
 cp -r ./OpenCravat-Adastra/adastra/ $OC_MODULES_PATH/annotators/  
 cp -r ./OpenCravat-Adastra/wgadastra/ $OC_MODULES_PATH/webviewerwidgets/  
-` ` `
+```
 
 NOTE: 
 Make sure you can open adastra.slick and select the contents of the tables,  
@@ -55,15 +55,15 @@ Make sure you can open adastra.slick and select the contents of the tables,
 
 Run OpenCRAVAT pipeline with a novel ADASTRA annotator module
 
-` ` `
+```
 oc run example_input_new.vcf -a adastra -l hg38
-` ` `
+```
 
 Open the results from OpenCRAVAT pipeline with a novel ADASTRA annotator module in browser
 
-` ` `
+```
 oc gui example_input_new.vcf.sqlite
-` ` `
+```
 
 ## Results
 
