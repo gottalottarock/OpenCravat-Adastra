@@ -74,7 +74,7 @@ Open the results from OpenCRAVAT pipeline with a novel ADASTRA annotator module 
 oc gui input.vcf.sqlite
 ```
 
-Test files (both positive and negative) are located in the directory ./tests/
+Test files (both positive and negative) are located in the directory ./test/
 
 ## Results
 
