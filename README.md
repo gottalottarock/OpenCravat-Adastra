@@ -36,9 +36,9 @@ pip install -r requirements.txt
 ```
 
 To download the Adastra database, you need to contact one of the developers of this repository.  
-Move adastra.sqlite to adastra/data
-Next, you need to transfer the module and widget to the open-cravat repo.  
-
+Move adastra.sqlite to `adastra/data`  
+ 
+Next, you need to transfer the module and widget to the open-cravat repo.   
 
 ```
 OC_MODULES_PATH=$(oc config md)  
