@@ -41,9 +41,9 @@ Next, you need to transfer the module and widget to the open-cravat repo.
 
 
 ` ` `
-OC_MODULES_PATH=$(oc config md)
-cp -r ./OpenCravat-Adastra/adastra/ $OC_MODULES_PATH/annotators/
-cp -r ./OpenCravat-Adastra/wgadastra/ $OC_MODULES_PATH/webviewerwidgets/
+OC_MODULES_PATH=$(oc config md)  
+cp -r ./OpenCravat-Adastra/adastra/ $OC_MODULES_PATH/annotators/  
+cp -r ./OpenCravat-Adastra/wgadastra/ $OC_MODULES_PATH/webviewerwidgets/  
 ` ` `
 
 NOTE: 
