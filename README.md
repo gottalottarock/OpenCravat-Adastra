@@ -58,6 +58,12 @@ cp -r ./OpenCravat-Adastra/wgadastra/ $OC_MODULES_PATH/webviewerwidgets/
 NOTE: 
 Make sure you can open adastra.slick and select the contents of the tables,  
  otherwise you need to fix permissions.
+ 
+ To check if the module is working properly you can use the following command:
+
+```
+ oc util test -m adastra
+ ```
 
 
 ## Usage
@@ -117,7 +123,7 @@ Motif Concordance indicates whether the allelic read imbalance is consistent wit
 ![image](https://user-images.githubusercontent.com/70381751/169641105-abaa7bc4-9841-4179-a2a2-ceaf34c98ae1.png)
 
 
-For more information please visit: [Link](https://adastra.autosome.org/zanthar/help) and  [Link](https://ananastra.autosome.org/help)
+For more information please visit: [Link](https://adastra.autosome.org/zanthar/help) or  [Link](https://ananastra.autosome.org/help)
 
 ## References
 
