@@ -10,11 +10,7 @@ import sqlite3
 class CravatAnnotator(BaseAnnotator):
     def setup(self):
         """
-        Set up data sources.
-        Cravat will automatically make a connection to
-        data/example_annotator.sqlite using the sqlite3 python module. The
-        sqlite3.Connection object is stored as self.dbconn, and the
-        sqlite3.Cursor object is stored as self.cursor.
+        Set up data source: adastra.sqlite
         """
         path_to_db = Path(__file__).resolve().parent/'data/adastra.sqlite'
         if not path_to_db.exists():
@@ -42,29 +38,25 @@ class CravatAnnotator(BaseAnnotator):
         ]
 
     def annotate(self, input_data):
-        """
+        """Annotator man method.
+
+
         The annotator parent class will call annotate for each line of the
         input file. It takes one positional argument, input_data, and one
         keyword argument, secondary_data.
-
-        input_data is a dictionary containing the data from the current input
-        line. The keys depend on what what file is used as the input, which can
-        be changed in the module_name.yml file.
-        Variant level includes the following keys:
-            ('uid', 'chrom', 'pos', 'ref_base', 'alt_base')
-        Variant level crx files expand the key set to include:
-            ('hugo', 'transcript','so','all_mappings')
-        Gene level files include
-            ('hugo', 'num_variants', 'so', 'all_so')
-
-        secondary_data is used to allow an annotator to access the output of
-        other annotators. It is described in more detail in the CRAVAT
-        documentation.
-
-        annotate should return a dictionary with keys matching the column names
-        defined in example_annotator.yml. Extra column names will be ignored,
-        and absent column names will be filled with None. Check your output
-        carefully to ensure that your data is ending up where you intend.
+        
+        Args:
+            input_data: (dict) is a dictionary containing the data from the current input
+            line. The keys depend on what what file is used as the input, which can
+            be changed in the module_name.yml file.
+            Variant level includes the following keys:
+                ('uid', 'chrom', 'pos', 'ref_base', 'alt_base')
+            Variant level crx files expand the key set to include:
+                ('hugo', 'transcript','so','all_mappings')
+            Gene level files include
+                ('hugo', 'num_variants', 'so', 'all_so')
+        Returns:
+            dict: dictionary with the keys, defined in adastra.yaml
         """
         tf_snps = self._select_tf_snp(input_data)
         cl_snps = self._select_cl_snp(input_data)
@@ -73,6 +65,14 @@ class CravatAnnotator(BaseAnnotator):
         return annotations
 
     def _select_tf_snp(self, input_data):
+        """Annotate snp with transcription-factor level information.
+
+        Args:
+            input_data: (dict) same as inpt_data in annotate.
+
+        Returns:
+            dict: with top 5 tf by p-value, number of tf, add all information about tf.
+        """
         chrom = input_data["chrom"]
         pos = input_data["pos"]
         alt = input_data["alt_base"]
@@ -102,6 +102,14 @@ class CravatAnnotator(BaseAnnotator):
         return annotations
 
     def _select_cl_snp(self, input_data):
+        """Annotate snp with cell-line level information.
+
+        Args:
+            input_data: (dict) same as inpt_data in annotate.
+
+        Returns:
+            dict: with top 5 cl by p-value, number of cl, add all information about cl.
+        """
         chrom = input_data["chrom"]
         pos = input_data["pos"]
         alt = input_data["alt_base"]
@@ -134,6 +142,8 @@ class CravatAnnotator(BaseAnnotator):
 
 
     def filter_convert_record(self, record):
+        """Convert log(FDR) to FDR and filter by FDR 0.05.
+        """
         record = deepcopy(dict(record))
         fdr_ref = 10 ** (-record.pop("log_p_value_ref"))
         fdr_alt = 10 ** (-record.pop("log_p_value_alt"))
@@ -146,10 +156,7 @@ class CravatAnnotator(BaseAnnotator):
         }
 
     def cleanup(self):
-        """
-        cleanup is called after every input line has been processed. Use it to
-        close database connections and file handlers. Automatically opened
-        database connections are also automatically closed.
+        """Cleanup database connection.
         """
         self.con.close()
 
