@@ -65,14 +65,16 @@ Make sure you can open adastra.slick and select the contents of the tables,
 Run OpenCRAVAT pipeline with a novel ADASTRA annotator module
 
 ```
-oc run example_input_new.vcf -a adastra -l hg38
+oc run input.vcf -a adastra -l hg38
 ```
 
 Open the results from OpenCRAVAT pipeline with a novel ADASTRA annotator module in browser
 
 ```
-oc gui example_input_new.vcf.sqlite
+oc gui input.vcf.sqlite
 ```
+
+Test files (both positive and negative) are located in the directory ./tests/
 
 ## Results
 
