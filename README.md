@@ -16,6 +16,7 @@ Feature | Version
 ------------ | -------------
 Operating system | Ubuntu 20.04
 Python | Python 3.9
+open-cravat | 2.2.7
 
 You can install the versions of the python libraries that were used during the testing of the pipeline using the requirements.txt:
 
