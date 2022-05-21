@@ -27,65 +27,16 @@ pip install -r requirements.txt
 
 ## Installation
 
-Creating a new OpenCRAVAT directory called ./oc_test/ 
-
-You can save this or choose any other name.
-
-` ` `
-mkdir oc_test
-` ` `
-
-Moving to a directory ./oc_test/
-
-` ` `
-cd oc_test/
-` ` `
-
-Creating a new virtual environment located at ./new_oc_env/
-
-` ` `
-python3 -m venv ./new_oc_env/
-` ` `
-
-Activating a new virtual environment
-
-` ` `
-source ./new_oc_env/bin/activate
-` ` `
-
-Installation of the OpenCRAVAT
-
-` ` `
-pip3 install open-cravat
-` ` `
-
-Installation of base OpenCRAVAT modules
-
-` ` `
-oc module install-base
-` ` `
-
-This command can help you find out exactly where OpenCRAVAT was installed
-
-` ` `
-which oc
-` ` `
-
-Cloning the OpenCravat-Adastra github repository
+Cloning the OpenCravat-Adastra github repository and install requirements.
 
 ` ` `
 git clone https://github.com/gottalottarock/OpenCravat-Adastra.git
+cd OpenCravat-Adastra
+pip install -r requirements.txt
 ` ` `
-
-This command can help you find out exactly where python3 was installed and its version which you have to indicate in paths to modules below
-
-` ` `
-which python3
-` ` `
-
-Further commands are given for python3.9, if you are using a different version, then change it in the paths to the OpenCRAVAT modules below
-
-OR
+To download the Adastra database, you need to contact one of the developers of this repository.  
+Move adastra.sqlite to adastra/data
+Next, you need to transfer the module and winget to the open-cravat repo.
 
 You can find the path to OpenCRAVAT modules with this command
 
@@ -93,35 +44,19 @@ You can find the path to OpenCRAVAT modules with this command
 oc config md
 ` ` `
 
-Integration of the ADASTRA module as a novel annotator module in the OpenCRAVAT
+
+Integration of the ADASTRA module and widget as a novel annotator module in the OpenCRAVAT
 
 ` ` `
-cp -r ./OpenCravat-Adastra/adastra/ ./new_oc_env/lib/python3.9/site-packages/cravat/modules/annotators/
+OC_MODULES_PATH=$(oc config md)
+cp -r ./OpenCravat-Adastra/adastra/ $OC_MODULES_PATH/annotators/
+cp -r ./OpenCravat-Adastra/wgadastra/ $OC_MODULES_PATH/webviewerwidgets/
 ` ` `
 
-Creating a new ADASTRA annotator module directory /data/
+NOTE: 
+Make sure you can open adastra.slick and select the contents of the tables,  
+ otherwise you need to fix permissions.
 
-` ` `
-mkdir ./new_oc_env/lib/python3.9/site-packages/cravat/modules/annotators/adastra/data/
-` ` `
-
-Integration of the ADASTRA module database as a novel database in the OpenCRAVAT
-
-` ` `
-cp ~/adastra_tf.sqlite ./new_oc_env/lib/python3.9/site-packages/cravat/modules/annotators/adastra/data/
-` ` `
-
-Changing the access permissions of an ADASTRA module database
-
-` ` `
-chmod 777 ./new_oc_env/lib/python3.9/site-packages/cravat/modules/annotators/adastra/data/adastra_tf.sqlite
-` ` `
-
-Integration of the ADASTRA module widget as a novel widget module in the OpenCRAVAT
-
-` ` `
-cp -r ./OpenCravat-Adastra/wgadastra/ ./new_oc_env/lib/python3.9/site-packages/cravat/modules/webviewerwidgets/
-` ` `
 
 ## Usage
 
