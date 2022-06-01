@@ -1,8 +1,14 @@
+/*
+Widget for displaying tables. Uses the built-in functions of OpenCravat.
+See https://open-cravat.readthedocs.io/en/latest/Widget-Tutorial.html
+*/
+
 widgetGenerators['adastra'] = {
 	'variant': {
 		'width': 880, 
 		'height': 180, 
 		'function': function (div, row, tabName) {
+			// display snp assotiated transcription factors table
 			addInfoLine(div, 'Transcription factors',' ', tabName)
 			var allMappings = getWidgetData(tabName, 'adastra', row, 'all_tf');
 			if (allMappings == null) {
@@ -25,6 +31,7 @@ widgetGenerators['adastra'] = {
 				}
 				addEl(div, addEl(table, tbody));
 			}
+			// display snp assotiated cell types table
 			addInfoLine(div, 'Cell types',' ', tabName)
 			var allCLMappings = getWidgetData(tabName, 'adastra', row, 'all_cl');
 			if (allCLMappings == null) {

@@ -34,6 +34,24 @@ You can install the versions of the python libraries that were used during the t
 pip install -r requirements.txt
 ```
 
+## Repository Structure
+
+Adastra annotator source code and config, describes input and output interfaces between an annotator and rest of OpenCravat.
+```
+adastra/
+    |───adastra.md
+    |───adastra.yml
+    └───adastra.py
+```
+
+Adastra widget source code and config:
+```
+wgadastra/
+    |───wgadastra.yml
+    └───wgadastra.js
+```
+For more information on development, see https://open-cravat.readthedocs.io/en/latest/Developer-onboarding.html
+
 ## Installation
 
 Cloning the OpenCravat-Adastra github repository and install requirements.
@@ -44,7 +62,7 @@ cd OpenCravat-Adastra
 pip install -r requirements.txt
 ```
 
-To download the Adastra database, you need to contact one of the developers of this repository.  
+To download the Adastra database, you need to contact developer of this repository: stepan.v.kuznetsov@phystech.edu 
 Move adastra.sqlite to `adastra/data`  
    
 Next, you need to transfer the module and widget to the open-cravat repo.   
