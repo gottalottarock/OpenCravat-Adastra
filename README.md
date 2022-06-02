@@ -143,6 +143,10 @@ Motif Concordance indicates whether the allelic read imbalance is consistent wit
 
 For more information please visit: [Link](https://adastra.autosome.org/zanthar/help) or  [Link](https://ananastra.autosome.org/help)
 
+## Сonclusions
+
+Here, we integrated the ADASTRA database as a novel annotator module in the OpenCRAVAT pipeline and presentad its installation and usage details in this README file. This is a crucial improvement of the OpenCRAVAT, since the vast majority of the other more than 150 databases integrated into this pipeline were designed for variant calling from the human genome coding regions of protein-coding genes, while ADASTRA database contains information about biologically significant genetic variants, located in its gene regulatory non-coding regions such as enhancers and promoters. Now, everyone can get a database ADASTRA directly from its authors or from open sources (depending on the database creators decision) and use it for annotation of allele-specific transcription factor binding events in his own VCF file using OpenCRAVAT pipeline.
+
 ## References
 
 ### Landscape of allele-specific transcription factor binding in the human genome.
